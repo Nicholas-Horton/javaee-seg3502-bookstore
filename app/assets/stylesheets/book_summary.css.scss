@@ -1,0 +1,78 @@
+#book-summary{
+
+  i.fa.fa-star, i.fa.fa-star-o, i.fa.fa-star-half-o {
+    color: gold;
+  }
+
+  i.fa.fa-cart-plus{
+    color: #208020;
+  }
+
+  .book-image{
+    float: left;
+    padding-top: 10px;
+  }
+
+  .rating{
+    padding-top: 10px;
+    a{
+      text-decoration: none;
+      color: cornflowerblue;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .book-information{
+    padding: 0 0 20px 20px;
+    display: inline-block;
+    max-width: 550px;
+    .book-title{
+      padding: 20px 0 5px 0;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .author{
+      padding-left: 20px;
+      font-size: 18px;
+      color: #666666;
+    }
+
+    .price{
+      display: inline-block;
+      margin: 10px;
+      padding: 0 15px 0 15px;
+      border: 2px solid cornflowerblue;
+    }
+
+    .add-to-cart-button{
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .description{
+      padding: 10px 0 0 0;
+    }
+  }
+
+  .review{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .review-button{
+    margin: 5px;
+  }
+
+  .see-all-reviews{
+    font-size: 20px;
+    font-weight: bold;
+    color: cornflowerblue;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
