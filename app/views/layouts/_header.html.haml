@@ -1,8 +1,14 @@
 #header
   .header-content
     =link_to(root_path, class:'menuButton') do
-      .headerText BookStore
+      .headerTitleText BookStore
+    .horizontalMenu
+      =link_to("book_search", class:'menuButton') do
+        .headerMenuText Browse
+      =link_to("book_search", class:'menuButton') do
+        .headerMenuText Search
     .headerUserActions
+      = link_to "My Cart", "static/shopping_cart"
       -#- if current_user
       -#  = link_to current_user.email, user_path(current_user)
       -#  = link_to 'Logout', :logout, method: :post, id: 'logout'

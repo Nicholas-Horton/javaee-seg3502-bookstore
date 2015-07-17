@@ -1,3 +1,111 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$header-height: 50px;
+$footer-height: 100px;
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #DDD;
+  color: #222;
+  text-shadow: 1px 1px 1px #AAA;
+}
+/* -- HEADER -- */
+#header{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #CCC;
+  border-bottom: 2px solid #BBB;
+  width: 100%;
+  height: $header-height;
+  line-height: $header-height;
+  display: inline-block;
+  //TODO: alert in mini-form
+  .header-content {
+    z-index: 100;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+
+    .headerTitleText{
+      float: left;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: $header-height - 10px;
+    }
+
+    .headerMenuText{
+      float: left;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: $header-height - 40px;
+    }
+
+    .headerUserActions {
+      float: right;
+      padding-right: 20px;
+      margin: 10px 0;
+      line-height: 20px;
+    }
+
+    #login, #logout, #sign-up {
+      z-index: 110;
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      background-color: #DDD;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #BBB;
+      }
+
+      &:active {
+        background-color: #999;
+      }
+    }
+  }
+}
+
+/* -- Notice -- */
+#notices  {
+  width: 80%;
+  margin: 50px auto auto;
+}
+
+/* -- CONTENT -- */
+#content{
+  width: 85%;
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 400px;
+  margin: 50px auto auto;
+  background-color: #EEE;
+  border-left: 2px solid #CCC;
+  border-right: 2px solid #CCC;
+  padding: 10px 20px;
+}
+
+a, a:visited {
+  color: #444;
+  outline: 0;
+  &:hover {
+    color: #111;
+  }
+}
+
+.table {
+  display: table;
+
+  .tr {
+    display: table-row;
+  }
+  .th {
+    display: table-cell;
+    font-weight: bold;
+  }
+  .td {
+    display: table-cell;
+  }
+
+}
