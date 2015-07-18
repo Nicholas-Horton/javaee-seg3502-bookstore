@@ -1,0 +1,106 @@
+#shopping-cart{
+  .cart-items{
+    table-layout: auto;
+    width: 600px;
+    border-collapse: collapse;
+    tr {
+      border-bottom: 2px solid #D6D6D6;
+    }
+    tr:last-child{
+      border: none;
+    }
+    .undo-message{
+      display: none;
+      td{
+        padding: 12px;
+        a {
+          color: cornflowerblue;
+        }
+      }
+    }
+
+  }
+
+  .price-header{
+    text-align: left;
+  }
+
+  .quantity-header{
+    text-align: right;
+  }
+
+  .cart-item-summary{
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    img{
+      float: left;
+      max-width: 100px;
+      max-height: 100px;
+      padding-right: 10px;
+    }
+
+    .book-summary{
+      vertical-align: top;
+      display: inline-block;
+      line-height: 150%;
+
+      a{
+        color: rgb(155, 26, 26);
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  .cart-item-quantity{
+    display: table-cell;
+    text-align: right;
+    input {
+      width: 40px;
+      height: 30px;
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+
+  .cart-item-price{
+    display: table-cell;
+    text-align: left;
+    input{
+      background: transparent;
+      border: none;
+      width: 50px;
+      font-size: 20px;
+    }
+  }
+
+  .subtotal{
+    .subtotal-value{
+      float:right;
+      padding-left: 10px;
+      font-weight: bold;
+      color: darkred;
+      background: transparent;
+      border: none;
+      width: 60px;
+      font-size: 15px;
+    }
+  }
+
+  .checkout{
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    .checkout-button{
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+
+}

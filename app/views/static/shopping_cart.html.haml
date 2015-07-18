@@ -1,1 +1,66 @@
-%h2 My Shopping Cart
+#shopping-cart
+  %h2 My Shopping Cart
+
+  %table.cart-items
+    %tr
+      %th &nbsp
+      %th.price-header Price
+      %th.quantity-header Quantity
+    %tr.cart-item
+      %td.cart-item-summary
+        =image_tag 'books/book2.jpg', class: 'book-image', alt: 'brave_new_world_cover'
+        .book-summary
+          %b Brave New World
+          by Aldous Huxley
+          %br
+          Science fiction
+          %br
+          Hardcover
+          %br
+          %a.delete-button{href:'#'}
+            %i.fa.fa-minus-circle
+            Delete
+      %td.cart-item-price
+        %input{id:'book1-price', type:'text',readonly:'true', value:'$4.99'}
+      %td.cart-item-quantity
+        %input#book1-quantity.cart-quantity-input{type:'number', value:'1', min:'1', max:'99'}
+    %tr.cart-item.undo-message
+      %td
+        %a{href:'book_summary'} Brave New World
+        has been removed
+        %a.undo{href:'#'} undo
+    %tr.cart-item
+      %td.cart-item-summary
+        =image_tag 'books/book1.jpg', class: 'book-image', alt: 'animal_farm_cover'
+        .book-summary
+          %b Animal Farm
+          by George Orwell
+          %br
+            Science fiction
+            %br
+            Hardcover
+            %br
+            %a.delete-button{href:'#'}
+              %i.fa.fa-minus-circle
+              Delete
+      %td.cart-item-price
+        %input{id:'book2-price', type:'text',readonly:'true', value:'$3.49'}
+      %td.cart-item-quantity
+        %input#book2-quantity.cart-quantity-input{type:'number', value:'1', min:'1', max:'99'}
+    %tr.cart-item.undo-message
+      %td
+        %a{href:'book_summary'} Animal Farm
+        has been removed
+        %a.undo{href:'#'} undo
+    %tr
+      %td
+      %td
+      %td.subtotal
+        %b Subtotal:
+        %input#subtotal.subtotal-value{type:'text',readonly:'true'}
+    %tr
+      %td
+      %td
+      %td.checkout
+        %a.button.checkout-button{href:'checkout'}
+          Checkout
