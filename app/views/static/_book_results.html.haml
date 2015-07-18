@@ -20,3 +20,25 @@
       %i.fa.fa-cart-plus
     %hr
     .year-format Hardcover - Jul 17 2001
+.book-result.book-summary
+  =link_to('/book_summary') do
+    =image_tag 'books/book1.jpg', class: 'book-image', alt: 'animal_farm_cover'
+  .book-information
+    =link_to 'Animal Farm', '/book_summary', class:'book-title'
+    .year 1945
+    .author By George Orwell
+    .category Satire
+    .rating
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star-o
+      %a{href:'/book_summary#customer-reviews'}5 customer reviews
+    .price
+      %h3 $ 3.49
+    .button.add-to-cart-button
+      Add to cart
+      %i.fa.fa-cart-plus
+    %hr
+    .year-format Paperback - Jan 02 2008
