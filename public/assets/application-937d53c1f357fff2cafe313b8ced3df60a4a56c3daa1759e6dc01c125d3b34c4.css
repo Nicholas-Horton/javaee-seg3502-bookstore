@@ -1,0 +1,634 @@
+/* line 2, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  width: 250px;
+  border-right: 1px solid #BBB;
+}
+/* line 9, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria .field {
+  height: 40px;
+}
+/* line 11, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria .field:not(:last-of-type) {
+  margin: 0 0 30px 0;
+}
+/* line 15, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria .field label {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  vertical-align: middle;
+}
+/* line 22, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria .field input, .search-books .search-criteria .field select {
+  display: inline-block;
+  width: 65%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+/* line 30, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-criteria #clear-button {
+  width: 120px;
+  margin: 0 44px;
+}
+/* line 36, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  width: 60%;
+}
+/* line 42, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results .search-results-message {
+  display: inline-block;
+  font-size: 20px;
+}
+/* line 47, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results .book-result {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #AAA;
+  padding: 0 20px 20px 20px;
+  margin: 20px;
+}
+/* line 55, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results .book-result .book-title {
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 60, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results .book-result .year {
+  display: inline-block;
+  color: #666666;
+}
+/* line 65, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_search.scss */
+.search-books .search-results .book-result .category {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+/* line 3, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary i.fa.fa-star, .book-summary i.fa.fa-star-o, .book-summary i.fa.fa-star-half-o {
+  color: gold;
+}
+/* line 7, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary i.fa.fa-cart-plus {
+  color: #208020;
+}
+/* line 11, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-image {
+  float: left;
+  padding-top: 10px;
+}
+/* line 16, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .rating {
+  padding-top: 10px;
+}
+/* line 18, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .rating a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+/* line 22, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .rating a:hover {
+  text-decoration: underline;
+}
+/* line 27, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information {
+  padding: 0 0 20px 20px;
+  display: inline-block;
+  max-width: 550px;
+}
+/* line 31, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information .book-title {
+  padding: 20px 0 5px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 37, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information .author {
+  padding-left: 20px;
+  font-size: 18px;
+  color: #666666;
+}
+/* line 43, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information .price {
+  display: inline-block;
+  margin: 10px;
+  padding: 0 15px 0 15px;
+  border: 2px solid cornflowerblue;
+}
+/* line 50, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information .add-to-cart-button {
+  font-weight: bold;
+  font-size: 22px;
+}
+/* line 55, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .book-information .description {
+  padding: 10px 0 0 0;
+}
+/* line 60, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .review {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 65, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .review-button {
+  margin: 5px;
+}
+/* line 69, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .see-all-reviews {
+  font-size: 20px;
+  font-weight: bold;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+/* line 74, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/book_summary.css.scss */
+.book-summary .see-all-reviews:hover {
+  text-decoration: underline;
+}
+/* line 1, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/browse_menu.css.scss */
+#browse-menu {
+  z-index: 90;
+  display: none;
+  position: absolute;
+  width: 190px;
+  left: 260px;
+  top: 55px;
+  background-color: #EEE;
+  border: 2px solid #BBB;
+  border-radius: 4px;
+  padding: 0px 0px 0 0px;
+}
+/* line 13, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/browse_menu.css.scss */
+#browse-menu .browse-menu-button {
+  display: block;
+  clear: both;
+  padding: 0 10px 0 10px;
+  line-height: 30px;
+  text-decoration: none;
+}
+/* line 19, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/browse_menu.css.scss */
+#browse-menu .browse-menu-button i {
+  float: right;
+  display: none;
+  color: #777777;
+  line-height: 30px;
+}
+/* line 25, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/browse_menu.css.scss */
+#browse-menu .browse-menu-button:hover {
+  background-color: #DDDDDD;
+}
+/* line 28, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/browse_menu.css.scss */
+#browse-menu .browse-menu-button:hover i {
+  display: inline-block;
+}
+/* line 1, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+table.payment-information {
+  margin: 0px 20px 20px 20px;
+}
+/* line 3, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+table.payment-information th {
+  text-align: left;
+}
+/* line 6, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+table.payment-information td {
+  width: 200px;
+  padding: 5px;
+  text-align: left;
+}
+
+/* line 13, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+.button-form {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+  text-shadow: 1px 1px 1px #AAA;
+  font-size: 16px;
+  background: #CCC;
+  cursor: pointer;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 34, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+.button-form:hover {
+  background: #BBB;
+}
+/* line 38, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/checkout.scss */
+.button-form:active {
+  background: #AAA;
+}
+/* line 1, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.banner-direction-arrow-left, .banner-direction-arrow-right {
+  position: absolute;
+  width: 70px;
+  height: 300px;
+  background-color: rgba(30, 30, 30, 0.7);
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  color: #CCC;
+}
+
+/* line 12, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.banner-direction-arrow-left {
+  top: 0;
+  left: 0;
+}
+
+/* line 17, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.banner-direction-arrow-right {
+  top: 0;
+  left: calc(80vw - 95px);
+}
+
+/* line 22, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+#scrolling-image-banner-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 27, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+#scrolling-image-banner {
+  position: relative;
+  height: 300px;
+  width: 6000px;
+  margin-bottom: 50px;
+  background-color: #DDDDDD;
+}
+/* line 34, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+#scrolling-image-banner a {
+  text-decoration: none;
+}
+
+/* line 39, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.book-image-container {
+  display: inline;
+  height: 300px;
+  width: 300px;
+  align-content: center;
+  margin: 5px;
+}
+
+/*keyframe animations*/
+/* line 48, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+#scrolling-image-banner:hover .first {
+  animation: image-scroll 30s linear infinite;
+}
+
+@keyframes image-scroll {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -3140px;
+  }
+}
+/* line 61, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.vertical-separator-book-repeat {
+  display: inline;
+  width: 20px;
+  height: 300px;
+  margin: 5px;
+  background-color: #666666;
+}
+
+/* line 69, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.book-image-container img {
+  transition: all 0.5s ease;
+}
+
+/* line 72, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/home.scss */
+.book-image-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+/* line 2, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items {
+  table-layout: auto;
+  width: 600px;
+  border-collapse: collapse;
+}
+/* line 6, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items tr {
+  border-bottom: 2px solid #D6D6D6;
+}
+/* line 9, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items tr:last-child {
+  border: none;
+}
+/* line 12, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items .undo-message {
+  display: none;
+}
+/* line 14, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items .undo-message td {
+  padding: 12px;
+}
+/* line 16, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-items .undo-message td a {
+  color: cornflowerblue;
+}
+/* line 24, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .price-header {
+  text-align: left;
+}
+/* line 28, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .quantity-header {
+  text-align: right;
+}
+/* line 32, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-summary {
+  vertical-align: top;
+  padding: 5px 10px 5px 10px;
+}
+/* line 35, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-summary img {
+  float: left;
+  max-width: 100px;
+  max-height: 100px;
+  padding-right: 10px;
+}
+/* line 42, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-summary .book-summary {
+  vertical-align: top;
+  display: inline-block;
+  line-height: 150%;
+}
+/* line 47, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-summary .book-summary a {
+  color: #9b1a1a;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+/* line 53, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-summary .book-summary a:hover {
+  text-decoration: underline;
+}
+/* line 60, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-quantity {
+  display: table-cell;
+  text-align: right;
+}
+/* line 63, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-quantity input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+  font-size: 20px;
+}
+/* line 71, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-price {
+  display: table-cell;
+  text-align: left;
+}
+/* line 74, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .cart-item-price input {
+  background: transparent;
+  border: none;
+  width: 50px;
+  font-size: 20px;
+}
+/* line 83, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .subtotal .subtotal-value {
+  float: right;
+  padding-left: 10px;
+  font-weight: bold;
+  color: darkred;
+  background: transparent;
+  border: none;
+  width: 60px;
+  font-size: 15px;
+}
+/* line 95, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .checkout {
+  padding: 10px;
+  display: table-cell;
+  text-align: center;
+}
+/* line 99, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/shopping_cart.css.scss */
+#shopping-cart .checkout .checkout-button {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 4, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #DDD;
+  color: #222;
+  text-shadow: 1px 1px 1px #AAA;
+}
+
+/* -- HEADER -- */
+/* line 11, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #CCC;
+  border-bottom: 2px solid #BBB;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  display: inline-block;
+}
+/* line 22, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content {
+  z-index: 100;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+/* line 29, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .horizontalMenu {
+  display: inline-block;
+}
+/* line 33, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .headerTitleText {
+  float: left;
+  padding-left: 5px;
+  padding-right: 15px;
+  font-weight: bold;
+  font-size: 45px;
+}
+/* line 41, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .headerMenuText {
+  float: left;
+  padding: 0 10px 0 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* line 49, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .browse-button {
+  width: 200px;
+  height: 55px;
+}
+/* line 54, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content #book-search {
+  font-size: 18px;
+  margin-left: 10px;
+}
+/* line 59, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .headerUserActions {
+  float: right;
+  padding-right: 20px;
+  margin: 10px 0;
+  line-height: 20px;
+}
+/* line 66, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .shopping-cart {
+  z-index: 110;
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #DDD;
+  text-decoration: none;
+}
+/* line 75, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .shopping-cart:hover {
+  background-color: #BBB;
+}
+/* line 79, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content .shopping-cart:active {
+  background-color: #999;
+}
+/* line 84, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content #login, #header .header-content #logout, #header .header-content #sign-up {
+  z-index: 110;
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #DDD;
+  text-decoration: none;
+}
+/* line 93, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content #login:hover, #header .header-content #logout:hover, #header .header-content #sign-up:hover {
+  background-color: #BBB;
+}
+/* line 97, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#header .header-content #login:active, #header .header-content #logout:active, #header .header-content #sign-up:active {
+  background-color: #999;
+}
+
+/* -- Notice -- */
+/* line 105, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#notices {
+  width: 80%;
+  margin: 50px auto auto;
+}
+
+/* -- CONTENT -- */
+/* line 111, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+#content {
+  width: 80%;
+  min-height: 600px;
+  margin: 50px auto auto;
+  background-color: #EEE;
+  border-left: 2px solid #CCC;
+  border-right: 2px solid #CCC;
+  padding: 10px 20px;
+}
+
+/* line 123, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+a, a:visited, .a {
+  color: #444;
+  outline: 0;
+  cursor: pointer;
+}
+/* line 127, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+a:hover, a:visited:hover, .a:hover {
+  color: #111;
+}
+
+/* line 132, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.table {
+  display: table;
+}
+/* line 135, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.table .tr {
+  display: table-row;
+}
+/* line 138, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.table .th {
+  display: table-cell;
+  font-weight: bold;
+}
+/* line 142, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.table .td {
+  display: table-cell;
+}
+
+/* line 148, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.button {
+  background: #CCC;
+  cursor: pointer;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 164, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.button:hover {
+  background: #BBB;
+}
+/* line 168, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+.button:active {
+  background: #AAA;
+}
+
+/* line 173, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+input, select {
+  padding: 4px;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  transition: box-shadow 0.3s, border 0.3s;
+  outline: 0;
+}
+/* line 180, G:/Wintastic/workspace-git/BookStore/app/assets/stylesheets/static.scss */
+input:focus, select:focus {
+  border: 1px solid #EA6;
+  box-shadow: 0 0 5px 1px #EA6;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
