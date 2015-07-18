@@ -1,0 +1,34 @@
+#browse-menu {
+  z-index: 90;
+  display: none;
+  position: absolute;
+  width: 190px;
+  left: 260px;
+  top: 55px;
+  background-color: #EEE;
+  border: 2px solid #BBB;
+  border-radius: 4px;
+  padding: 0px 0px 0 0px;
+
+  .browse-menu-button{
+    display: block;
+    clear:both;
+    padding: 0 10px 0 10px;
+    line-height: 30px;
+    text-decoration: none;
+    i {
+      float:right;
+      display: none;
+      color: #777777;
+      line-height: 30px;
+    }
+    &:hover{
+      background-color: #DDDDDD;
+
+      i {
+        display: inline-block;
+      }
+
+    }
+  }
+}

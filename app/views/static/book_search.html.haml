@@ -13,10 +13,10 @@
       =select_tag 'category', options_for_select(['Action and Adventure', 'Art', 'Autobiographies', 'Biographies', 'Children\'s', 'Comics', 'Cookbooks', 'Dictionaries', 'Drama', 'Encyclopedias', 'Fantasy', 'Guide', 'History', 'Horror', 'Journals', 'Math', 'Mystery', 'Poetry', 'Romance', 'Satire', 'Science', 'Science fiction', 'Travel']), include_blank: true, class: 'book-search-input'
     .field
       %label Later than year
-      =number_field_tag 'min-year', nil, min: 1900, max: 2020, class: 'book-search-input'
+      =number_field_tag 'min-year', nil, min: 0, max: 2020, class: 'book-search-input'
     .field
       %label Before year
-      =number_field_tag 'max-year', nil, min: 1900, max: 2020, class: 'book-search-input'
+      =number_field_tag 'max-year', nil, min: 0, max: 2020, class: 'book-search-input'
     .field
       %label Minimum rating
       =number_field_tag 'min-rating', nil, min: 0, max: 5, step:0.5, class: 'book-search-input'

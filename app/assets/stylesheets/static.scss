@@ -46,6 +46,11 @@ body{
       font-size: $header-height - 40px;
     }
 
+    .browse-button{
+      width: 200px;
+      height: $header-height;
+    }
+
     #book-search {
       font-size: 18px;
     }
@@ -114,9 +119,10 @@ body{
   padding: 10px 20px;
 }
 
-a, a:visited {
+a, a:visited, .a {
   color: #444;
   outline: 0;
+  cursor: pointer;
   &:hover {
     color: #111;
   }

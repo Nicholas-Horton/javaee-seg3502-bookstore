@@ -3,8 +3,8 @@
     =link_to(root_path, class:'menuButton') do
       .headerTitleText BookStore
     .horizontalMenu
-      =link_to("book_search", class:'menuButton') do
-        .headerMenuText Browse
+      .headerMenuText.a#browse-button Browse
+      = render 'layouts/browse_menu'
       %label{for: 'book-search', class: 'headerMenuText'} Search:
       %input{type: 'search', id: 'book-search'}
       = link_to("book_search") do
