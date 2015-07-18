@@ -93,7 +93,16 @@
   %div.suggested-books
     %hr
     %h3 You may also like...
-    =image_tag 'books/book1.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
-    =image_tag 'books/book4.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
-    =image_tag 'books/book5.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
-    =image_tag 'books/book6.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =link_to("book_summary") do
+      .book-image-container
+        =image_tag 'books/book1.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =link_to("book_summary") do
+      .book-image-container
+        =image_tag 'books/book4.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =link_to("book_summary") do
+      .book-image-container
+        =image_tag 'books/book5.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =link_to("book_summary") do
+      .book-image-container
+        =image_tag 'books/book6.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+
