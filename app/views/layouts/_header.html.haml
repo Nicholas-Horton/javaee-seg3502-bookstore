@@ -5,8 +5,10 @@
     .horizontalMenu
       =link_to("book_search", class:'menuButton') do
         .headerMenuText Browse
-      =link_to("book_search", class:'menuButton') do
-        .headerMenuText Search
+      %label{for: 'book-search', class: 'headerMenuText'} Search:
+      %input{type: 'search', id: 'book-search'}
+      = link_to("book_search") do
+        %i.fa.fa-search.search-icon.fa-lg
     .headerUserActions
       = link_to("shopping_cart", class: 'shopping-cart') do
         My Cart
