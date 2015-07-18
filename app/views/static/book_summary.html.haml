@@ -14,9 +14,11 @@
 
     .price
       %h3 $ 4.99
-    .button.add-to-cart-button
-      Add to cart
-      %i.fa.fa-cart-plus
+
+    = link_to("shopping_cart") do
+      .button.add-to-cart-button
+        Add to cart
+        %i.fa.fa-cart-plus
     %hr
     .year-format Hardcover - Jul 17 2001
     .description
@@ -91,4 +93,7 @@
   %div.suggested-books
     %hr
     %h3 You may also like...
-    Come on Mr Horton give me the graphics
+    =image_tag 'books/book1.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =image_tag 'books/book4.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =image_tag 'books/book5.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
+    =image_tag 'books/book6.jpg', class: 'display: block;', alt: 'brave_new_world_cover'
