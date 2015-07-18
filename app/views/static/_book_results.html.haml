@@ -1,0 +1,22 @@
+.book-result.book-summary
+  =link_to('/book_summary') do
+    =image_tag 'books/book2.jpg', class: 'book-image', alt: 'brave_new_world_cover'
+  .book-information
+    =link_to 'Brave New World', '/book_summary', class:'book-title'
+    .year 1932
+    .author By Aldous Huxley
+    .category Science fiction
+    .rating
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star
+      %i.fa.fa-star-half-o
+      %a{href:'/book_summary#customer-reviews'}13 customer reviews
+    .price
+      %h3 $ 4.99
+    .button.add-to-cart-button
+      Add to cart
+      %i.fa.fa-cart-plus
+    %hr
+    .year-format Hardcover - Jul 17 2001
