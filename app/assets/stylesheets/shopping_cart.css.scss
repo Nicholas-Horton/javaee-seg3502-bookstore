@@ -6,7 +6,7 @@
     tr {
       border-bottom: 2px solid #D6D6D6;
     }
-    tr.last{
+    tr:last-child{
       border: none;
     }
     .undo-message{
@@ -92,8 +92,15 @@
     }
   }
 
-  .checkout-button{
-    display: inline-block;
+  .checkout{
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    .checkout-button{
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
+
 
 }
