@@ -168,6 +168,7 @@ input, select {
   border: 1px solid #AAA;
   border-radius: 4px;
   transition: box-shadow 0.3s, border 0.3s;
+  outline: 0;
 
   &:focus {
     border: 1px solid #EA6;
