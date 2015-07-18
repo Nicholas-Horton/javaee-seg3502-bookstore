@@ -1,4 +1,4 @@
-$header-height: 50px;
+$header-height: 55px;
 $footer-height: 100px;
 
 body{
@@ -18,7 +18,7 @@ body{
   height: $header-height;
   line-height: $header-height;
   display: inline-block;
-  //TODO: alert in mini-form
+
   .header-content {
     z-index: 100;
     position: relative;
@@ -26,16 +26,22 @@ body{
 //    max-width: 1200px;
     margin: auto;
 
+    .horizontalMenu{
+      display: inline-block;
+    }
+
     .headerTitleText{
       float: left;
       padding-left: 5px;
+      padding-right: 15px;
       font-weight: bold;
       font-size: $header-height - 10px;
     }
 
     .headerMenuText{
       float: left;
-      padding-left: 20px;
+      padding: 0px 10px 0px 20px;
+
       font-weight: bold;
       font-size: $header-height - 40px;
     }
