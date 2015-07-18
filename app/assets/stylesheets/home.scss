@@ -1,0 +1,63 @@
+.banner-direction-arrow-left, .banner-direction-arrow-right{
+  position: absolute;
+  width: 70px;
+  height: 300px;
+  background-color: rgba(30, 30, 30, 0.7);
+  font-size: 30px;
+  text-align: center;
+  line-height: 300px;
+  color: #CCC;
+}
+
+.banner-direction-arrow-left{
+  top: 0;
+  left: 0;
+}
+
+.banner-direction-arrow-right{
+  top: 0;
+  left: calc(80vw - 95px);
+}
+
+#scrolling-image-banner-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+
+#scrolling-image-banner{
+  position: relative;
+  height: 300px;
+  width: 6000px;
+  margin-bottom: 50px;
+  background-color: #DDDDDD;
+}
+
+.book-image-container{
+  display: inline;
+  height: 300px;
+  width: 300px;
+  align-content: center;
+  margin: 5px;
+}
+
+/*keyframe animations*/
+#scrolling-image-banner:hover .first{
+  animation: image-scroll 30s linear infinite;
+}
+
+@keyframes image-scroll {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -3140px;
+  }
+}
+
+.vertical-separator-book-repeat{
+  display: inline;
+  width: 20px;
+  height: 300px;
+  margin: 5px;
+  background-color: #666666;
+}
