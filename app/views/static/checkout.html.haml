@@ -38,7 +38,7 @@
       %td
         %label{for: 'payment-first-name'} First Name
       %td
-        %input{type: 'text', id: 'payment-first-nam', :required => true}
+        %input{type: 'text', id: 'payment-first-name', :required => true}
     %tr
       %td
         %label{for: 'payment-last-name'} Last Name
@@ -59,6 +59,9 @@
         %label{for: 'payment-country'} Country
       %td
         %select
+          %option{value: "CA"} Canada
+          %option{value: "US"} United States
+          %option{value: "UM"} United States Minor Outlying Islands
           %option{value: "AF"} Afghanistan
           %option{value: "AX"} Åland Islands
           %option{value: "AL"} Albania
@@ -98,7 +101,6 @@
           %option{value: "BI"} Burundi
           %option{value: "KH"} Cambodia
           %option{value: "CM"} Cameroon
-          %option{value: "CA"} Canada
           %option{value: "CV"} Cape Verde
           %option{value: "KY"} Cayman Islands
           %option{value: "CF"} Central African Republic
@@ -294,8 +296,6 @@
           %option{value: "UA"} Ukraine
           %option{value: "AE"} United Arab Emirates
           %option{value: "GB"} United Kingdom
-          %option{value: "US"} United States
-          %option{value: "UM"} United States Minor Outlying Islands
           %option{value: "UY"} Uruguay
           %option{value: "UZ"} Uzbekistan
           %option{value: "VU"} Vanuatu
@@ -308,6 +308,33 @@
           %option{value: "YE"} Yemen
           %option{value: "ZM"} Zambia
           %option{value: "ZW"} Zimbabwe
+
+  %h3 Shipping Information
+  %table.payment-information
+    %tr
+      %td
+        %label{for: 'payment-shipping-address'} Shipping Address
+      %td
+        %input{type: 'text', id: 'payment-shipping-address', :required => true}
+    %tr
+      %td
+        %label{for: 'payment-shipping-apt-suite-building'} Apt, Suite, Bldg
+      %td
+        %input{type: 'text', id: 'payment-shipping-address'}
+    %tr
+      %td
+        %label{for: 'payment-shipping-postal-code'} Postal/Zip Code
+      %td
+        %input{type: 'text', id: 'payment-shipping-postal-code', :required => true}
+    %tr
+      %td
+        %label{for: 'payment-shipping-method'} Shipping Method
+      %td
+        %select{id: 'payment-shipping-postal-code'}
+          %option{value: "CanadaPost"} Canada Post
+          %option{value: "FedEx"} Fed Ex
+          %option{value: "USPS"} USPS
+          %option{value: "UPS"} UPS
 
   %h3 Billing Information
   %table.payment-information
