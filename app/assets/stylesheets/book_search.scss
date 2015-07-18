@@ -24,16 +24,6 @@
         width: 65%;
         box-sizing: border-box;
         vertical-align: middle;
-
-        padding: 4px;
-        border: 1px solid #AAA;
-        border-radius: 4px;
-        transition: box-shadow 0.3s, border 0.3s;
-
-        &:focus {
-          border: 1px solid #EA6;
-          box-shadow: 0 0 5px 1px #EA6;
-        }
       }
     }
 

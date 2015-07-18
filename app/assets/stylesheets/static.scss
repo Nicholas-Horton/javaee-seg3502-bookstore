@@ -47,16 +47,7 @@ body{
     }
 
     #book-search {
-      padding: 4px;
       font-size: 18px;
-      border: 1px solid #AAA;
-      border-radius: 4px;
-      transition: box-shadow 0.3s, border 0.3s;
-
-      &:focus {
-        border: 1px solid #EA6;
-        box-shadow: 0 0 5px 1px #EA6;
-      }
     }
 
     .headerUserActions {
@@ -169,5 +160,17 @@ a, a:visited {
 
   &:active {
     background: #AAA;
+  }
+}
+
+input, select {
+  padding: 4px;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  transition: box-shadow 0.3s, border 0.3s;
+
+  &:focus {
+    border: 1px solid #EA6;
+    box-shadow: 0 0 5px 1px #EA6;
   }
 }
